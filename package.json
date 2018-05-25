@@ -1,0 +1,31 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "The project develops contracts for tlp platform",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle migrate --reset && truffle test --network",
+    "generate-wrappers": "abi-gen --abis 'build/contracts/*.json' --output 'wrappers' --template 'templates/contract.handlebars' --partials 'templates/partials/**/*.handlebars'"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "smartsense consulting solutions pvt ltd",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "@0xproject/abi-gen": "^0.2.13",
+    "@0xproject/base-contract": "^0.3.1",
+    "@0xproject/types": "^0.6.3",
+    "@types/lodash": "^4.14.109",
+    "@types/mocha": "^5.2.0",
+    "lodash": "^4.17.10"
+  }
+}
