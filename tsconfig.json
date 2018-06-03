@@ -3,12 +3,14 @@
     "module": "commonjs",
     "target": "es5",
     "lib": ["es2017", "dom"],
-    "sourceMap": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noUnusedLocals": false,
+    "preserveConstEnums": true,
     "declaration": true,
-    "experimentalDecorators": true,
-    "noImplicitReturns": true,
-    "pretty": true,
-    "typeRoots": ["node_modules/@0xproject/typescript-typings/types", "node_modules/@types"],
-    "strict": true
+    "sourceMap": true,
+    "inlineSources": true, // Required for debugging NPM published package.
+    "rootDir": "src/",
+    "experimentalDecorators": true
   }
 }
