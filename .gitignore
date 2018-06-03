@@ -27,3 +27,13 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+/util/*.d.ts
+/util/*.js
+/util/*.js.map
+/test/*.d.ts
+/test/*.js
+/test/*.js.map
+/test/*/*.d.ts
+/test/*/*.js
+/test/*/*.js.map

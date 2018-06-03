@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "truffle migrate --reset && truffle test --network",
-    "generate-wrappers": "abi-gen --abis 'build/v1.0.0/*.json' --output 'contracts-wrapper' --template 'contracts-template/contract.handlebars' --partials 'contracts-template/partials/**/*.handlebars'"
+    "generate-wrappers": "abi-gen --abis 'build/src/*.json' --output 'contracts-wrapper' --template 'contracts-template/contract.handlebars' --partials 'contracts-template/partials/**/*.handlebars'"
   },
   "repository": {
     "type": "git",
